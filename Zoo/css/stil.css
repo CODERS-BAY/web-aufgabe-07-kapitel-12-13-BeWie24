@@ -1,0 +1,227 @@
+body {
+  font-size: 120%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.4;
+  color: #000000;
+  background-color: #ffffcc;
+  margin: 0;
+}
+.tiere {
+  background-image: url("../img/giraffe.jpg");
+  min-height: 60vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+ h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  font-family: 'Overlock', cursive;
+  color: #516b1f;
+  letter-spacing: 3px;
+ }
+ #herzwill { /*Überschrift auf der index Seite*/
+   font-weight: bolder;
+ }
+h2 {
+  text-align: center;
+  font-family: 'Overlock', cursive;
+}
+h3 {
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  font-style: italic;
+}
+.maintiere h3 { /*für alle H3 Überschriften in tiere.html*/
+  background-color: #88b13c;
+  box-shadow: 0px 0px 15px inset #ffffff;
+  padding: 2%;
+  border: 2px solid #516b1f;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform: scale(1.2); /*vergrössert H3 um 1,2 %*/
+}
+.maintiere p { /*für alle Textblöcke in tiere.html */
+  background-color: #BCE46F;
+  box-shadow: 4px 4px 5px #88b13c;
+  padding: 2%;
+  text-align: center;
+}
+main.maintiere { /*für alles im Main von tiere.html - die main greift nicht mehr zu, da durch main.maintiere die maintiere mehr Gewichtigkeit bekommen hat*/ 
+  background: rgb(216,245,183);
+  background: linear-gradient(90deg, rgba(216,245,183,1) 0%, rgba(60,121,9,1) 26%, rgba(33,138,0,1) 57%, rgba(1,40,17,1) 100%);
+  padding: 5%;
+  margin: 5%;
+  max-width: 100%;
+}
+#elefant {
+    transform: rotate(0);
+    transition: transform 2s ease;
+}
+#elefant:hover {
+  transform: rotate(360deg); 
+}
+#kanguruh {
+    transform: rotate(0);
+    transition: transform 2s ease;
+}
+#kanguruh:hover {
+    transform: rotate(360deg);
+}
+#nashorn {
+  transform: rotate(0);
+  transition: transform 2s ease;
+}
+#nashorn:hover {
+  transform: rotate(360deg);
+}
+a:link {
+  color: #768F00;
+}
+a:visited {
+  color: #406200;
+}
+a:hover {
+  background-color: #BCE46F;
+}
+:target {   /*target: interner Link (Ziel) wird nach dem Klicken gekennzeichnet z.B. "nach oben"*/
+  background-color: #749D27;
+}
+q::before {   /*Einfügen eines Icons vor einem Text*/
+  content: url("../img/pawprint1.png");
+}
+q::after {  /*Einfügen eines Icons nach einem Text*/
+  content: url("../img/pawprint2.png");
+}
+p#beate::first-letter  {    /*ZUSAMMENSCHREIBEN: für paragraph mit ID Beate soll der erste Buchstabe markiert sein*/
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+}
+p#beate {   /*ID für Fußnote*/
+  margin-left: 1rem;
+}
+section {
+  text-align: center;
+  display: center;
+}
+nav {
+  background-color: #BFE600;
+}
+nav ul {
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 0.8rem;
+}
+nav a.aktuell {
+  font-weight: bold;
+}
+main {
+  max-width: 62rem;
+  margin: auto;
+  display: block; 
+}
+.links { /*die Klasse links befindet sich auf der Seite links*/
+  background-image: url("../img/links.jpg");
+  background-repeat: no-repeat;
+  background-position: absolute;
+  width: 100vw;
+  height: 100vh; 
+  font-family: 'Comfortaa', cursive;
+  font-size: 2em;
+  background-position: scroll;
+}
+.links h1 {
+  font-size: 3em;
+  color: #293f01;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: 'Courgette', cursive;
+  text-shadow: #88b13c 4px 3px 0px;
+}
+.links h2 {
+  color: #293f01;
+  font-family: 'Courgette', cursive;
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.links a {
+  color: #293f01;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-left: 0.5em;
+  font-size: 0.8em;
+}
+.links li {
+  list-style-image: url("../img/links.png");
+}
+article {
+  width: 100%;
+  margin: 0 2rem;
+}
+footer {
+  background-color: #BFE600;
+  color: #ffffff;
+  padding: 0.5rem;
+ }
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 530px) {
+main {
+  display: block;
+  }
+} 
+.form-group { /*ich schaffe es leider nicht das Formular so zu gestalten wie ich möchte... :-( */
+  display: flex;
+  
+}
+.form-group > * { 
+  flex-basis: 100vw;
+  margin: 15px;
+  padding: 1px;
+} 
+label { /*Beschriftung der Formularfelder*/
+  text-align: center;
+}
+#button { /*dieser blöde Button wird einfach nicht schmäler, egal welche Grösse ich eingebe... bääähh... */
+  color: #fff;
+  background-color: #406200;	
+  text-align: center;
+  width: 120px;
+  height: 25px;
+  border-radius: 5px;
+}
+table {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 2rem;
+}
+td {
+  border: 1px solid black;
+}
+th {
+  background-color: #BCE46F;
+  border: 1px solid black
+}
+tr:nth-child(2n) {
+  background-color: #768F00;
+}
+blockquote { /*blockquote zur Kennzeichnung von Zitaten*/
+  text-align: center;
+  font-style: italic;
+}
+#tab { /*erste Zeile der Tabelle*/
+ font-variant: small-caps;
+}
+
